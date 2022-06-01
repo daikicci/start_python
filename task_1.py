@@ -25,4 +25,3 @@ else:
           f'Яблоки: {apple_number:<10}'
           f'Бананы: {banana_number:<10}'
           f'Апельсины: {orange_number if orange_number is not None else "не ел"}')
-

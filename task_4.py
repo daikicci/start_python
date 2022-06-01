@@ -10,4 +10,3 @@ while user_number // 10 > 0:
     if next_digit > max_digit:
         max_digit = next_digit
 print(f'Самая большая цифра: {max_digit}')
-
