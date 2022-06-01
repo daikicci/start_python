@@ -6,7 +6,7 @@ user_number = input('Введите число n: ')
 try:
     temp_user_number = int(user_number)
 except ValueError:
-    print('Эй, это не число!')
+    print('Я так не играю!')
 else:
     double_number = user_number + user_number
     triple_number = double_number + user_number
