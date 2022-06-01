@@ -24,4 +24,4 @@ else:
     print(f'{user_name} сегодня кушал много фруктов, вот они слева направо:\n'
           f'Яблоки: {apple_number:<10}'
           f'Бананы: {banana_number:<10}'
-          f'Апельсины: {orange_number if orange_number is not None else "не ел"}')
+          f'Апельсины: {orange_number if orange_number else "не ел"}')
