@@ -19,5 +19,5 @@ none = None
 my_list = [int, float, complex, str, list, tuple, set, frozenset, dict, bool, bytes, bytearray, none]
 
 print(f'Типы элементов списка:')
-for i in range(len(my_list)):
-    print(f'{i+1}. {my_list[i]} - {type(my_list[i])}')
+for i, el in enumerate(my_list, 1):
+    print(f'{i}. {el} - {type(el)}')
