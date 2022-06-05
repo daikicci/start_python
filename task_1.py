@@ -2,22 +2,17 @@
 # каждого элемента. Использовать функцию type() для проверки типа. Элементы списка можно не запрашивать у пользователя,
 # а указать явно, в программе.
 
-int = 394
-float = 9.75
-complex = complex(5, 4)
-str = 'крокодил'
-list = ['ехал', 'грека', 'через', 'реку']
-tuple = (4, 8, 15, 16, 23, 42)
-set = set('император')
-frozenset = frozenset('императрица')
-dict = {'name': 'Шоё', 'last_name': 'Хината', 'age': 15}
-bool = True
-bytes = b'word'
-bytearray = bytearray(bytes)
-none = None
+my_list = ['ехал', 'грека', 'через', 'реку']
+my_tuple = (4, 8, 15, 16, 23, 42)
+my_set = set('император')
+my_frozenset = frozenset('императрица')
+my_dict = {'name': 'Шоё', 'last_name': 'Хината', 'age': 15}
+my_bytes = b'word'
+my_bytearray = bytearray(my_bytes)
 
-my_list = [int, float, complex, str, list, tuple, set, frozenset, dict, bool, bytes, bytearray, none]
+final_list = [394, 9.75, complex(5, 4), 'крокодил', my_list, my_tuple, my_set, my_frozenset, my_dict, True, my_bytes,
+              my_bytearray, None]
 
 print(f'Типы элементов списка:')
-for i, el in enumerate(my_list, 1):
+for i, el in enumerate(final_list, 1):
     print(f'{i}. {el} - {type(el)}')

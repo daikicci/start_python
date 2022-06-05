@@ -20,9 +20,9 @@ while user_input != 'конец':
     user_input = input('Введите элемент списка: ')
 print(f'Ваш список: {my_list}')
 
-len = len(my_list)
-for i in range(0, len, 2):
-    if i == len - 1:
+length = len(my_list)
+for i in range(0, length, 2):
+    if i == length - 1:
         break
     my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
 print(f'Поменяем местами четные с нечетными: {my_list}')

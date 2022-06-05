@@ -20,4 +20,3 @@ else:
     temp_list.insert(index, new_el)
     my_list = list(reversed(temp_list))
 print(f'Новый рейтинг: {my_list}')
-
