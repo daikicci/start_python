@@ -30,10 +30,6 @@ while month_num:
 
 month_name = month_list[month_num - 1]
 for i in range(len(season_list)):
-    try:
-        month_ind = season_list[i]['months'].index(month_name)
-    except ValueError:
-        continue
-    else:
-        print(f'{month_num}-й месяц года - {month_name}. Это {month_ind + 1}-й {season_list[i]["adj"]} месяц.')
+    if month_name in season_list[i]['months']:
+        print(f'{month_num}-й месяц года - {month_name}. Это {season_list[i]["adj"]} месяц.')
         break
