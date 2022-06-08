@@ -22,4 +22,3 @@ while len(user_num_list) != 3:
     user_num_list = input('Попробуем еще раз. ' + enter_num).split()
 sum_two_max = my_func(user_num_list[0], user_num_list[1], user_num_list[2])
 print(sum_two_max)
-
