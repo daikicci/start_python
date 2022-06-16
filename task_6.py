@@ -20,26 +20,26 @@ with open('task_6.txt', 'r', encoding='utf-8') as my_f:
     for i in range(str_num):
         string = my_f.readline()
         temp_class_list = string.split(':')
-        dict_key = temp_class_list[0]
-        temp_hours_str = ''
+        class_name = temp_class_list[0]
+        temp_lesson_q_str = ''
         # грустно без регулярок :(
         for symb in list(temp_class_list[1]):
             try:
                 int(symb)
             except ValueError:
-                temp_hours_str += ' '
+                temp_lesson_q_str += ' '
             else:
-                temp_hours_str += symb
+                temp_lesson_q_str += symb
 
-        hours_list = temp_hours_str.split()
-        hours_num_list = [int(el) for el in hours_list]
+        lesson_q_str_list = temp_lesson_q_str.split()
+        lesson_q_num_list = [int(el) for el in lesson_q_str_list]
 
 
         def int_accumulator(prev_el, el):
             return prev_el + el
 
 
-        hours = reduce(int_accumulator, hours_num_list)
+        lesson_q = reduce(int_accumulator, lesson_q_num_list)
 
-        class_dict[dict_key] = hours
+        class_dict[class_name] = lesson_q
     print(class_dict)
