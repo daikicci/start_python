@@ -101,9 +101,3 @@ police_car.go()
 police_car.turn('right')
 police_car.show_speed()
 police_car.stop()
-
-
-
-
-
-
