@@ -17,13 +17,13 @@ class Road:
 
     def count_road_mass(self, layer_mass=25, layer_q=5):
         road_mass = self._length * self._width * layer_mass * layer_q
-        return f'{self._length} м * {self._width} м * {layer_mass} кг * {layer_q} = {road_mass / 1000:.2f} т.'
+        return f'{road_mass / 1000:.2f} т.'
 
 
 try:
     road_length = float(input('Введите длину дороги в метрах: '))
     road_width = float(input('Введите ширину дороги в метрах: '))
     road = Road(road_length, road_width)
-    print(f'Расчет необходимой массы асфальта: {road.count_road_mass()}')
+    print(f'Необходимая масса асфальта: {road.count_road_mass()}')
 except ValueError:
     print('Неверно введены данные.')
