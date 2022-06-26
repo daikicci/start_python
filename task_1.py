@@ -25,7 +25,7 @@ class Date:
             date_int_list = list(map(lambda x: int(x), date.split('-')))
             if len(date_int_list) != 3:
                 raise IndexError
-            date_int_list = Date.validate_int_date(date_int_list)
+            date_int_list = cls.validate_int_date(date_int_list)
             return date_int_list
         except (ValueError, IndexError):
             return
